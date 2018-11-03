@@ -1,0 +1,98 @@
+/*
+ Theme Name:   Foodhunt-child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Foodhunt Child Theme
+ Author:       Eric Hamimi
+ Author URI:   http://example.com
+ Template:     Foodhunt
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  foodhunt_child
+*/
+
+/* Edition du branding en attendant logo */
+
+/* pour régler un petit problème avec le menu mobile */
+#menu-mobile .m-visible {
+	display: block;
+}
+
+#bottom-footer {
+	display: none;
+}
+
+#header-text #site-title,
+p#site-description {
+	font-family: 'Great Vibes', cursive;
+}
+
+h3#site-title {
+	font-size: 4rem;
+}
+
+p#site-description {
+	font-size: 3rem;
+}
+
+#header-text #site-title a{
+	color: #fff;
+}
+
+/* MENU DU JOUR */
+.banner-menu {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3rem;
+} 
+
+.banner-menu .sub-title {
+
+}
+
+.home .menu-items img {
+	border-radius: 50%;
+}
+
+/* Menu de la semaine */
+.week {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.week ul {
+	list-style: none;
+}
+
+.week-title h2 {
+	font-family: "Great Vibes",cursive;
+	font-size: 4.5rem;
+	text-align: center;
+}
+
+.day span {
+	font-family: "Great Vibes", cursive;
+	font-size: 2rem;
+	text-align: center;
+	display: block;
+}
+
+.menu-plats {
+	border-right: 1px solid #ccc;
+	padding-right: 2rem;
+}
+
+.menu-plat h4{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* wide screen */
+@media screen and (min-width: 768px) {
+	.week {
+		flex-direction: row;
+	}
+}
+

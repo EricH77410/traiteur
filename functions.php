@@ -124,5 +124,30 @@ add_action('admin_menu', 'atelier_options');
 // }
 // add_action( 'foodhunt_before_content', 'atelier_banner_menu', 10 );
 
+// Selection des produits pour le menu de la semaine
+// -------------------------------------------------
+function atelier_get_day_product($day){
+  $args = array(
+      'category' => array( $day )
+      );
+  $products = wc_get_products( $args );
+
+  return $products;
+}
+
+function atelier_render_menu_plat($plat){
+  echo '<div class="menu-plat">';
+  echo '<img src="';
+  echo wp_get_attachment_url($plat->image_id);
+  echo '" alt="Plat">';
+  echo '<h4>';
+  echo $plat->name;
+  echo '</h4>';
+  echo '<p class="menu-description">';
+  echo $plat->short_description;
+  echo '</p>';
+  echo '</div>';
+}
+
 ?>
 

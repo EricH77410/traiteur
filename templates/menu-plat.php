@@ -1,22 +1,14 @@
 <?php
 /*	
 	présentation d'un plat dans le menu semaine
+	<h4><?php echo $plat->name; ?></h4>
+	<p><?php echo $plat->short_description; ?></p>
+	<p><?php echo $plat->price; ?></p>
+	<p><?php echo wp_get_attachment_url($plat->image_id); ?></p>
 */
 ?>
 <div class="menu-plat">
-	<img src="https://picsum.photos/150" alt="Plat">
-	<h4>Titre</h4>
+	<img src="<?php echo wp_get_attachment_url($plat->image_id); ?>" alt="Plat">
+	<h4><?php echo $plat->name; ?></h4>
 	<p class="menu-description">Petite description</p>
 </div>
-
-<?php 
-
-// function displayPlat() {
-// 	echo('<div class="menu-plat">');
-// 	echo('<img src="https://picsum.photos/150?image=835" alt="Plat">');
-// 	echo('<h4>Titre</h4>');
-// 	echo('<p class="menu-description">Petite description</p>');
-// 	echo('</div>');
-// }
-
-?>

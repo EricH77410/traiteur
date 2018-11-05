@@ -5,7 +5,7 @@
     <div class="week-nav">
         <div class="button prev"></div>
         <div class="button next"></div>
-    <div class="week-title"><h2>Menu de la semaine du au </h2></div>
+    <div class="week-title"><h2>Menu de la semaine</h2></div>
 </div>
 <div class="week">
 

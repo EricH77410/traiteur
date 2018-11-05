@@ -72,9 +72,6 @@ p#site-description {
 	text-align: center;
 }
 
-.day {
-	width: 20%;
-}
 
 .day span {
 	font-family: "Great Vibes", cursive;
@@ -102,6 +99,9 @@ p#site-description {
 @media screen and (min-width: 768px) {
 	.week {
 		flex-direction: row;
+	}
+	.day {
+		width: 20%;
 	}
 }
 

@@ -137,15 +137,11 @@ function atelier_get_day_product($day){
 
 function atelier_render_menu_plat($plat){
   echo '<div class="menu-plat">';
-  echo '<img src="';
-  echo wp_get_attachment_url($plat->image_id);
-  echo '" alt="Plat">';
-  echo '<h4>';
-  echo $plat->name;
-  echo '</h4>';
-  echo '<p class="menu-description">';
-  echo $plat->short_description;
-  echo '</p>';
+    echo '<h4>' . $plat->name . '</h4>';
+    echo '<img src="';
+    echo wp_get_attachment_url($plat->image_id);
+    echo '" alt="Plat">';  
+    echo '<p class="menu-description">' . $plat->short_description . '</p>';
   echo '</div>';
 }
 

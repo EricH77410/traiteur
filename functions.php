@@ -5,8 +5,11 @@ function foodhunt_child_enqueue_styles() {
 	//Enqueue parent and child theme style.css 
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' ); wp_enqueue_style( 'spacious_child_style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ), wp_get_theme()->get('Version')
    );
+  wp_enqueue_style('bxSliderCss','https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
 
-	wp_enqueue_script('atelierjs', get_stylesheet_directory_uri() . '/js/atelier.js', array('jquery'),'1.0.0', true);
+  // Fichier JS
+  wp_enqueue_script('bxSlider','https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), '4.2.12', true);
+  wp_enqueue_script('atelierjs', get_stylesheet_directory_uri() . '/js/atelier.js', array('jquery'),'1.0.0', true);
 } 
 add_action( 'wp_enqueue_scripts', 'foodhunt_child_enqueue_styles' );
 
@@ -117,12 +120,6 @@ function atelier_adjustments(){ ?>
 
 add_action('admin_menu', 'atelier_options');
 
-// MENU DU JOUR
-// function atelier_banner_menu(){
-// 	require('templates/banner_menu.php');
-// 	// require('templates/menu_semaine.php');
-// }
-// add_action( 'foodhunt_before_content', 'atelier_banner_menu', 10 );
 
 // Selection des produits pour le menu de la semaine
 // -------------------------------------------------

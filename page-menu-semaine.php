@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<main id="main" class="clearfix">
 		<div id="content" class="clearfix <?php echo esc_attr( $foodhunt_layout ); ?>" >
-			<div class="tg-container">
+			<div class="tg-container menu-container">
 				<div id="primary">
 
 					<?php while( have_posts() ) : the_post();

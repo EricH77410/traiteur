@@ -14,15 +14,16 @@ function initMap(){
   var marker = new google.maps.Marker({
     position: latLng,
     map: map,
-    title: 'La Pizzeria'
+    title: "L'Atelier"
   })
 }
-
-
 
 var breakpoint = 768;
 
 $(document).ready(function(){
+  
+  // bxSlider sur le menu du jour
+  $('.slider').bxSlider();
 
   // Adapt Map heigth size
   var gglMap = $('#map');

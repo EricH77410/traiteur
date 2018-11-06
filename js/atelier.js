@@ -24,8 +24,6 @@ var breakpoint = 768;
 
 $(document).ready(function(){
 
-  boxAdjustment();
-
   // Adapt Map heigth size
   var gglMap = $('#map');
   if (gglMap.length>0){

@@ -10,7 +10,7 @@
 <div class="week">
 
     <section class="day">
-        <a href: "#"><span class"first">Lundi</span></a>
+        <a href="#"><span class="first">Lundi</span></a>
         <ul class="menu-plats">
 
 			<?php 
@@ -27,7 +27,7 @@
     </section>
 
     <section class="day">
-        <a href: "#"><span class"first">Mardi</span></a>
+        <a href= "#"><span class="first">Mardi</span></a>
         <ul class="menu-plats">
             <?php 
 				$mardi = atelier_get_day_product('mardi');
@@ -43,7 +43,7 @@
     </section>
 
     <section class="day">
-        <a href: "#"><span class"first">Mercredi</span></a>
+        <a href= "#"><span class="first">Mercredi</span></a>
         <ul class="menu-plats">
             <?php 
 				$mercredi = atelier_get_day_product('mercredi');
@@ -59,7 +59,7 @@
     </section>
 
     <section class="day">
-        <a href: "#"><span class"first">Jeudi</span></a>
+        <a href="#"><span class="first">Jeudi</span></a>
         <ul class="menu-plats">
             <?php 
 				$jeudi = atelier_get_day_product('jeudi');
@@ -75,7 +75,7 @@
     </section>
 
     <section class="day">
-        <a href: "#"><span class"first">Vendredi</span></a>
+        <a href="#"><span class="first">Vendredi</span></a>
         <ul class="menu-plats">
             <?php 
 				$vendredi = atelier_get_day_product('vendredi');
@@ -91,7 +91,7 @@
     </section>
 
     <section class="day">
-        <a href: "#"><span class"first">Samedi</span></a>
+        <a href="#"><span class="first">Samedi</span></a>
         <ul class="menu-plats">
             <?php 
 				$samedi = atelier_get_day_product('samedi');

@@ -23,7 +23,12 @@ var breakpoint = 768;
 $(document).ready(function(){
   
   // bxSlider sur le menu du jour
-  $('.slider').bxSlider();
+  $('.slider').bxSlider({
+    auto: true,
+    mode: 'fade',
+    captions: true,
+    responsive: true
+  });
 
   // Adapt Map heigth size
   var gglMap = $('#map');

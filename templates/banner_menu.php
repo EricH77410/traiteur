@@ -5,17 +5,18 @@
 <?php
   setlocale(LC_TIME,'fra_fra');
   $day = strftime('%A');
-  $products = atelier_get_day_product($day)
+  $products = atelier_get_day_product('mardi');
 ?>
 
 <section class="slider">
   <?php 
     foreach ($products as $plat) { ?>
 
-      <li>
+      <div title="<?php echo $plat->name ?>">
         <!--		<?php atelier_render_menu_plat($plat); ?>-->
         <h3><?php echo $plat->name ?></h3>
-      </li>				 	 
+        <img src="<?php echo wp_get_attachment_url($plat->image_id); ?>" alt="<?php echo $plat->name ?>">
+      </div>				 	 
 				 
   <?php } ?>
 </section>

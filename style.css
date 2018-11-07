@@ -40,19 +40,32 @@ p#site-description {
 	color: #fff;
 }
 
+/* ============ */
 /* MENU DU JOUR */
+/* ============ */
 .banner-menu {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 3rem;
-} 
+}
+
+.banner-menu .section-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  text-transform: none;
+  text-align: center;
+}
+
+.plat-title {  
+  text-align: center;
+}
+
+.bx-wrapper {
+  margin: 0 auto;
+}
 
 .banner-menu .sub-title {
 
-}
-
-.home .menu-items img {
-	border-radius: 50%;
 }
 
 /* ================== */

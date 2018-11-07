@@ -26,8 +26,9 @@ $(document).ready(function(){
   $('.slider').bxSlider({
     auto: true,
     mode: 'fade',
-    captions: true,
-    responsive: true
+    responsive: true,
+    speed: 1000,
+    slideWidth: 600
   });
 
   // Adapt Map heigth size
@@ -52,13 +53,13 @@ function displayMap(val){
 }
 
 
-jQuery('.menu-toggle').on('click', function(){
-	console.log('hbg has been clicked');
-	var $menu = jQuery('#menu-mobile');
-	if ($menu.hasClass('m-visible')){
-		jQuery('#menu-mobile').removeClass('m-visible');
-	} else {
-		jQuery('#menu-mobile').addClass('m-visible');
-	}
-	
-})
+//jQuery('.menu-toggle').on('click', function(){
+//	console.log('hbg has been clicked');
+//	var $menu = jQuery('#menu-mobile');
+//	if ($menu.hasClass('m-visible')){
+//		jQuery('#menu-mobile').removeClass('m-visible');
+//	} else {
+//		jQuery('#menu-mobile').addClass('m-visible');
+//	}
+//	
+//})

@@ -17,7 +17,7 @@
   );
 
   setlocale(LC_TIME,'fra_fra');
-  $day = strftime('%A'); //$days[strftime('%A')];
+  $day = $days[strftime('%A')];
   $products = atelier_get_day_product($day);
 ?>
 
@@ -42,7 +42,7 @@
 <section class="banner-menu">
 	<h3 class="section-title">Au menu aujourd'hui <?php echo $day; ?></h3>
 	<div class="menu-items">
-		<?php echo do_shortcode( '[featured_products]' );  ?>
+		<?php //echo do_shortcode( '[featured_products]' );  ?>
 	</div>
 </section>
 -->

@@ -45,7 +45,6 @@
 			<?php if ( get_theme_mod( 'foodhunt_ticker_activation', '0' ) == '1' || has_nav_menu( 'social' ) ) { ?>
 				<div class="top-header clearfix">
 					<div class="tg-container">
-                        <h1>Rico header custom</h1>
 						<?php
 						if ( get_theme_mod( 'foodhunt_ticker_activation', '0' ) == '1' ) {
 							foodhunt_header_news();

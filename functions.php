@@ -134,13 +134,31 @@ function atelier_get_day_product($day){
 
 function atelier_render_menu_plat($plat){
   echo '<div class="menu-plat">';
-    echo '<h4>' . $plat->name . '</h4>';
+    echo '<h4>' . $plat->get_name() . '</h4>';
     echo '<img src="';
     echo wp_get_attachment_url($plat->image_id);
     echo '" alt="Plat">';  
-    echo '<p class="menu-description">' . $plat->short_description . '</p>';
+    echo '<p class="menu-description">' . $plat->get_short_description() . '</p>';
   echo '</div>';
 }
+
+/* Supprimer un champ dans la page checkout */
+function spa_checkout_fields($fields){
+  // echo '<pre>';
+  // var_dump($fields);
+  // echo '</pre>';
+  unset($fields['billing']['billing_company']);
+  unset($fields['billing']['billing_country']);
+  unset($fields['billing']['billing_address_1']);
+  unset($fields['billing']['billing_address_2']);
+  unset($fields['billing']['billing_city']);
+  unset($fields['billing']['billing_state']);
+  unset($fields['billing']['billing_postcode']);
+  unset($fields['order']['order_comments']);
+  return $fields;
+}
+
+add_filter( 'woocommerce_checkout_fields', 'spa_checkout_fields', 20 );
 
 ?>
 

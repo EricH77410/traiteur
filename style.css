@@ -14,11 +14,6 @@
 
 /* Edition du branding en attendant logo */
 
-/* pour régler un petit problème avec le menu mobile */
-#menu-mobile .m-visible {
-	display: block;
-}
-
 #bottom-footer {
 	display: none;
 }
@@ -102,6 +97,7 @@ p#site-description {
 	margin-bottom: 10px;
 }
 
+
 .menu-plat img {
 	width: 150px;
 	height: 150px;
@@ -127,6 +123,12 @@ p#site-description {
     .menu-plats {
 	  border-right: 1px solid #ccc;
 	  padding-right: 2rem;
+    }
+    .menu-plat{
+    	margin-bottom: 10px;
+    }
+    .menu-description {
+    	margin-bottom: 10px;
     }
 }
 

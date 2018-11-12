@@ -8,7 +8,7 @@
 */
 ?>
 <div class="menu-plat">
-	<img src="<?php echo wp_get_attachment_url($plat->image_id); ?>" alt="Plat">
+	<img src="<?php echo wp_get_attachment_url($plat->get_image_id()); ?>" alt="<?php echo $plat->get_name(); ?>">
 	<h4><?php echo $plat->get_name(); ?></h4>
 	<p class="menu-description">Petite description</p>
 </div>

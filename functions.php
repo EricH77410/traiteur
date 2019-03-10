@@ -139,12 +139,15 @@ function atelier_render_menu_plat($plat){
     echo wp_get_attachment_url($plat->get_image_id());
     echo '" alt="'.$plat->get_name().'">';  
     echo '<p class="menu-description">' . $plat->get_short_description() . '</p>';
-    echo '<a href="/boutique/?add-to-cart='.$plat->get_id().'" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="'.$plat->get_id().'" data-product_sku="" aria-label="Ajouter “'.$plat->get_name().'” à votre panier" rel="nofollow">Ajouter au panier</a>';
+    echo '<div class="menu-price">'.$plat->get_regular_price().'</div>';
+    echo '<a href="/boutique/?add-to-cart='.$plat->get_id().'" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart menu-button" data-product_id="'.$plat->get_id().'" data-product_sku="" aria-label="Ajouter “'.$plat->get_name().'” à votre panier" rel="nofollow"><i class="fa fa-cart"></i> Ajouter</a>';
+    
   echo '</div>';
 }
 
+
 /* Supprimer un champ dans la page checkout */
-function spa_checkout_fields($fields){
+function atelier_checkout_fields($fields){
   unset($fields['billing']['billing_company']);
   unset($fields['billing']['billing_country']);
   unset($fields['billing']['billing_address_1']);
@@ -156,7 +159,7 @@ function spa_checkout_fields($fields){
   return $fields;
 }
 
-add_filter( 'woocommerce_checkout_fields', 'spa_checkout_fields', 20 );
+add_filter( 'woocommerce_checkout_fields', 'atelier_checkout_fields', 20 );
 
 ?>
 

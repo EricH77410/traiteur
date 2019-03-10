@@ -15,33 +15,33 @@
 /* Edition du branding en attendant logo */
 
 #bottom-footer {
-	display: none;
+  display: none;
 }
 
 #header-text #site-title,
 p#site-description {
-	font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 h3#site-title {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 p#site-description {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
-#header-text #site-title a{
-	color: #fff;
+#header-text #site-title a {
+  color: #fff;
 }
 
 /* ============ */
 /* MENU DU JOUR */
 /* ============ */
 .banner-menu {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .banner-menu .section-title {
@@ -51,7 +51,7 @@ p#site-description {
   text-align: center;
 }
 
-.plat-title {  
+.plat-title {
   text-align: center;
 }
 
@@ -59,76 +59,334 @@ p#site-description {
   margin: 0 auto;
 }
 
-.banner-menu .sub-title {
-
-}
+.banner-menu .sub-title {}
 
 /* ================== */
 /* Menu de la semaine */
 /* ================== */
 
 .week {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .week ul {
-	list-style: none;
+  list-style: none;
 }
 
 .week-title h2 {
-	font-family: "Great Vibes",cursive;
-	font-size: 4.5rem;
-	text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 4.5rem;
+  text-align: center;
 }
 
 
 .day span {
-	font-family: "Great Vibes", cursive;
-	font-size: 2.5rem;
-	text-align: center;
-	display: block;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  display: block;
   letter-spacing: 2px;
 }
 
-.menu-plat h4{
-	text-align: center;
-	margin-bottom: 10px;
+.menu-plat {
+	border: solid 1px #ccc;    
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+    position: relative;
+}
+
+.menu-plat h4 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 
 .menu-plat img {
-	width: 150px;
-	height: 150px;
+  width: 150px;
+  height: 150px;
   display: block;
   margin: 0 auto;
+}
+
+.menu-button {
+	display: block !important;
+	text-align: center;
+}
+
+.menu-price {
+	text-align: center;
+	background: #d40305;
+	color: #fff;
+	/*position: absolute;
+	width: 100%;*/
 }
 
 .menu-description {
   text-align: center;
 }
 
+
 /* wide screen */
 @media screen and (min-width: 768px) {
-    .menu-container {
-      width: 90%;
-    }
-	.week {
-		flex-direction: row;
-	}
-	.day {
-		width: 20%;
-	}
-    .menu-plats {
-	  border-right: 1px solid #ccc;
-	  padding-right: 2rem;
-    }
-    .menu-plat{
-    	margin-bottom: 10px;
-    }
-    .menu-description {
-    	margin-bottom: 10px;
-    }
+  .menu-container {
+    width: 100%;
+  }
+
+  .week {
+    flex-direction: row;
+  }
+
+  .day {
+    width: 20%;
+  }
+
+  .menu-plats {
+    border-right: 1px solid #ccc;
+    padding-right: 2rem;
+  }
+
+  .menu-plat {
+    margin-bottom: 10px;
+  }
+
+  .menu-description {
+    margin-bottom: 10px;
+  }
 }
 
+/* Sticky Header */
+
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  /* width: 50px; */
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  /* text-transform: uppercase; */
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+.hero {
+  position: relative;
+  background: url(./img/back.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 400px;
+  height: 100vh;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+/* .hero h1 span {
+  font-size: 25px;
+  color: #e8f380;
+  border-bottom: 2px solid #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+} */
+.hero_milieu {
+  width: 100%;
+  height: 150px;
+  background-color: #8C7E5B;
+  margin-top: 150px;
+}
+.hero_milieu .header_title {
+  padding: 1rem;
+}
+#title_j{
+  font-size: 7rem;
+}
+
+@media only screen and (min-width: 766px) {
+  .hero_milieu .header_title {
+    padding: 4rem;
+  }
+}
+.header_title h1 {
+  color: #fff;
+}
+.header_title span {
+  color: #DFB200;
+  font-family: 'Great vibes', cursive;
+} 
+.hero_bottom {
+  width: 100%;
+  background-color: #fff;
+  height: 150px;
+}
+.hero_bottom__contact {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;  
+}
+
+.hero_bottom__contact h4,
+.hero_bottom h3,
+.hero_bottom h4 {
+  color: #877A5A;
+}
+/* End Sticky Header */

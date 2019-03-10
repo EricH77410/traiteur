@@ -25,129 +25,55 @@
 
 <div id="page" class="hfeed site">
 
-	<?php
+	<!-- <?php do_action( 'foodhunt_before_header' ); ?> -->
 
-	foodhunt_the_custom_header_markup();
+	<header id="masthead" class="site-header main_h <?php echo esc_attr( $foodhunt_logo_text ); ?>" role="banner">
 
-	if ( get_theme_mod( 'foodhunt_slider_activation', '0' ) == '1' && is_front_page() && ! is_home() ) {
-		get_template_part( 'template-parts/content', 'slider' );
-		foodhunt_pass_slider_parameters();
-	}
-	$foodhunt_logo_text = get_theme_mod( 'foodhunt_logo_placement', 'text-only' );
-	?>
+			<!-- Rico Header -->
+			<div class="row">
+        	<a class="logo" href="#">
+				<h2>L'atelier de <span>James</span></h2>
+			</a>
 
+        	<div class="rico_mobile-toggle">
+            	<span></span>
+            	<span></span>
+            	<span></span>
+        	</div>
 
-	<?php do_action( 'foodhunt_before_header' ); ?>
+			<nav>
+				<ul>
+					<li><a href=".sec01">Menu du jour</a></li>
+					<li><a href=".sec02">Menu de la semaine</a></li>
+					<li><a href=".sec03">Contact</a></li>
+				</ul>
+			</nav>
 
-	<header id="masthead" class="site-header <?php echo esc_attr( $foodhunt_logo_text ); ?>" role="banner">
-		<div class="header-wrapper clearfix">
-          
-			<?php if ( get_theme_mod( 'foodhunt_ticker_activation', '0' ) == '1' || has_nav_menu( 'social' ) ) { ?>
-				<div class="top-header clearfix">
-					<div class="tg-container">
-						<?php
-						if ( get_theme_mod( 'foodhunt_ticker_activation', '0' ) == '1' ) {
-							foodhunt_header_news();
-						}
+    	</div> <!-- / row -->		
 
-						if ( has_nav_menu( 'social' ) ) {
-							foodhunt_social_menu();
-						}
-						?>
-					</div>
-				</div> <!-- top-header wrapper end -->
-			<?php } ?>
+		<!-- End Rico Header -->
 
-			<div class="mobile-menu-wrapper">
-				<div class="tg-container">
-					<div class="menu-toggle hide"><?php esc_html_e( 'Menu', 'foodhunt' ) ?></div>
-					<ul id="menu-mobile" class="menu">
-
-						<?php wp_nav_menu( array(
-							'theme_location' => 'primary_one',
-							'items_wrap'     => '%3$s',
-							'container'      => 'false',
-						) ); ?>
-
-						<?php wp_nav_menu( array(
-							'theme_location' => 'primary_two',
-							'items_wrap'     => '%3$s',
-							'container'      => 'false',
-						) ); ?>
-					</ul>
-				</div>
-			</div>
-
-			<div class="bottom-header clearfix">
-				<div class="tg-container">
-
-					<div class="left-menu-wrapper">
-
-						<nav id="site-navigation" class="main-navigation left-nav" role="navigation">
-							<?php wp_nav_menu( array(
-								'theme_location' => 'primary_one',
-								'menu_id'        => 'menu-left',
-							) ); ?>
-						</nav><!-- #site-navigation -->
-					</div>
-
-					<div class="logo-text-wrapper">
-
-						<?php $screen_reader = '';
-						if ( $foodhunt_logo_text == 'logo-only' || $foodhunt_logo_text == 'header-none' ) {
-							$screen_reader = 'screen-reader-text';
-						} ?>
-
-						<div id="header-text" class="<?php echo $screen_reader; ?>">
-
-							<?php if ( is_front_page() && is_home() ) : ?>
-								<h1 id="site-title">
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-								</h1>
-							<?php else : ?>
-								<h3 id="site-title">
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-								</h3>
-							<?php endif;
-
-							$description = get_bloginfo( 'description', 'display' );
-							if ( $description || is_customize_preview() ) : ?>
-								<p id="site-description"><?php echo esc_html( $description ); ?></p>
-							<?php endif; ?>
-						</div><!-- #header-text -->
-
-						<?php if ( ( $foodhunt_logo_text == 'both' || $foodhunt_logo_text == 'logo-only' ) ) { ?>
-							<div class="logo">
-
-								<?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
-									foodhunt_the_custom_logo();
-								} ?>
-
-							</div>
-						<?php } ?>
-					</div>
-
-					<div class="right-menu-wrapper">
-
-						<div class="home-search">
-							<div class="search-icon">
-								<i class="fa fa-search"> </i>
-							</div>
-						</div><!-- home-search-end -->
-
-						<nav id="site-navigation" class="main-navigation right-nav">
-							<?php wp_nav_menu( array(
-								'theme_location' => 'primary_two',
-								'menu_id'        => 'menu-right',
-							) ); ?>
-						</nav> <!-- site-navigation end -->
-					</div>
-				</div>
-			</div>
-		</div><!-- header-wrapper end -->
 	</header><!-- #masthead -->
+	<div class="hero">
+		<div class="hero_milieu">
+			<div class="header_title">
+				<h1>L'Atelier de <span id="title_j">J</span><span>ames</span></h1>
+			</div>
+		</div>
+		<div class="hero_bottom">
+			<h3>Traiteur - Epicerie fine</h3>
+			<h4>BIARRITZ</h4>
+			<div class="hero_bottom__contact">
+				<h4>05.59.26.33.37</h4>
+				<h4>latelierdejamse64@yahoo.com</h4>
+			</div>
+		</div>
+	</div>
+	
 
 	<?php do_action( 'foodhunt_after_header' ); ?>
+
+
 
 	<div class="body-content-wrapper">
 

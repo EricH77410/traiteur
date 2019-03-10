@@ -44,7 +44,7 @@
 
     <section class="day">
         <a href= "#"><span class="first">Mercredi</span></a>
-        <ul class="menu-plats">
+        <ul class="menu-plats"> <!-- class="menu-plats" -->
             <?php 
 				$mercredi = atelier_get_day_product('mercredi');
 

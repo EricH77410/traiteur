@@ -389,4 +389,10 @@ p {
 .hero_bottom h4 {
   color: #877A5A;
 }
+.atelier-title {
+  text-transform: none;
+}
+.atelier-title span {
+  font-family: 'Great vibes', cursive;
+}
 /* End Sticky Header */

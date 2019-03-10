@@ -32,7 +32,7 @@
 			<!-- Rico Header -->
 			<div class="row">
         	<a class="logo" href="#">
-				<h2>L'atelier de <span>James</span></h2>
+				<h2 class="atelier-title">L'Atelier de <span>James</span></h2>
 			</a>
 
         	<div class="rico_mobile-toggle">

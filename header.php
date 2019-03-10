@@ -84,7 +84,7 @@
 			if ( empty( $foodhunt_header_title_bar ) ) {
 				$foodhunt_no_header_image = ' header-title-no-img';
 			} ?>
-			<div class="header-titlebar-wrapper<?php echo esc_attr( $foodhunt_no_header_image ) ?> clearfix">
+			<!-- <div class="header-titlebar-wrapper<?php echo esc_attr( $foodhunt_no_header_image ) ?> clearfix">
 
 				<?php if ( ! empty( $foodhunt_header_title_bar ) ) { ?>
 					<div class="header-titlebar-overlay"></div>
@@ -94,5 +94,5 @@
 				<div class="header-title-wrap">
 					<?php foodhunt_header_title(); ?>					
 				</div>
-			</div>
+			</div> -->
 		<?php } ?>

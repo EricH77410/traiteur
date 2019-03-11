@@ -21,7 +21,7 @@
   $products = atelier_get_day_product($day);
 ?>
 
-<section class="banner-menu">
+<section class="banner-menu" id="menu-jour">
   <h3 class="section-title">Au menu aujourd'hui <?php echo ucfirst($day); ?></h3>
  <div class="slider">
   <?php 

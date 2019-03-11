@@ -31,7 +31,7 @@
 
 			<!-- Rico Header -->
 			<div class="row">
-        	<a class="logo" href="#">
+        	<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<h2 class="atelier-title">L'Atelier de <span>James</span></h2>
 			</a>
 
@@ -43,9 +43,9 @@
 
 			<nav>
 				<ul>
-					<li><a href=".sec01">Menu du jour</a></li>
-					<li><a href=".sec02">Menu de la semaine</a></li>
-					<li><a href=".sec03">Contact</a></li>
+					<li><a href="#menu-jour">Menu du jour</a></li>
+					<li><a href="<?php echo get_page_link(718); ?>">Menu de la semaine</a></li>
+					<li><a href="contact">Contact</a></li>
 				</ul>
 			</nav>
 

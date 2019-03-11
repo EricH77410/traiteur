@@ -13,7 +13,7 @@
 	</div><!--  body-content-wrapper end -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
+<!-- 
 		<?php get_template_part( 'template-parts/content-footer' ); ?>
 
 		<div id="bottom-footer">
@@ -31,7 +31,7 @@
 					} ?>
 				</div>
 			</div>
-		</div> <!-- bottom footer end -->
+		</div> <!-- bottom footer end --> -->
 	</footer><!-- #colophon -->
 
 	<a href="#" class="scrollup"><i class="fa fa-angle-up"> </i> </a>

@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 
 	<?php do_action( 'foodhunt_before_content' ); ?>
-
+	
 	<?php get_template_part('templates/banner_menu'); ?>
 
 	<?php if( is_active_sidebar( 'foodhunt_business_sidebar' ) ) {

@@ -166,7 +166,8 @@ p#site-description {
   z-index: 999;
   width: 100%;
   padding-top: 17px;
-  background: none;
+  /* background: none; */
+  background: #877A5A;
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -190,7 +191,7 @@ p#site-description {
 }
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.93);
+  /* background-color: rgba(140, 126, 91, 0.93); */
   opacity: 1;
   top: 0px;
   border-bottom: 1px solid gainsboro;
@@ -199,7 +200,7 @@ p#site-description {
 .logo {
   /* width: 50px; */
   font-size: 25px;
-  color: #8f8f8f;
+  color: #fff;
   text-transform: uppercase;
   float: left;
   display: block;
@@ -207,29 +208,37 @@ p#site-description {
   line-height: 1;
   margin-bottom: 10px;
 }
+.logo img {
+  width: 250px;
+}
 @media only screen and (max-width: 766px) {
   .logo {
     float: none;
   }
 }
 
-nav {
+.rico-nav {
   float: right;
   width: 60%;
 }
 @media only screen and (max-width: 766px) {
-  nav {
+  .rico-nav {
     width: 100%;
   }
 }
-nav ul {
+.rico-nav ul {
   list-style: none;
   overflow: hidden;
   text-align: right;
   float: right;
 }
+.rico-img {
+  position: fixed;
+  margin-top: 0.5rem;
+  top: 0;
+}
 @media only screen and (max-width: 766px) {
-  nav ul {
+  .rico-nav ul {
     padding-top: 10px;
     margin-bottom: 22px;
     float: left;
@@ -237,19 +246,22 @@ nav ul {
     width: 100%;
   }
 }
-nav ul li {
+.rico-nav ul li {
   display: inline-block;
   margin-left: 35px;
   line-height: 1.5;
 }
+.rico-nav ul a {
+  color: #fff !important;
+}
 @media only screen and (max-width: 766px) {
-  nav ul li {
+  .rico-nav ul li {
     width: 100%;
     padding: 7px 0;
     margin: 0;
   }
 }
-nav ul a {
+.rico-nav ul a {
   color: #888888;
   text-transform: uppercase;
   font-size: 12px;
@@ -349,7 +361,7 @@ p {
 } */
 .hero_milieu {
   width: 100%;
-  height: 150px;
+  height: 250px;
   background-color: #8C7E5B;
   margin-top: 150px;
 }

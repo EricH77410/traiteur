@@ -32,7 +32,8 @@
 			<!-- Rico Header -->
 			<div class="row">
         	<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<h2 class="atelier-title">L'Atelier de <span>James</span></h2>
+				<!-- <h2 class="atelier-title">L'Atelier de <span>James</span></h2> -->
+				<img class="rico-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Logo">
 			</a>
 
         	<div class="rico_mobile-toggle">
@@ -41,7 +42,7 @@
             	<span></span>
         	</div>
 
-			<nav>
+			<nav class="rico-nav">
 				<ul>
 					<li><a href="#menu-jour">Menu du jour</a></li>
 					<li><a href="<?php echo get_page_link(718); ?>">Menu de la semaine</a></li>
@@ -57,7 +58,8 @@
 	<div class="hero">
 		<div class="hero_milieu">
 			<div class="header_title">
-				<h1>L'Atelier de <span id="title_j">J</span><span>ames</span></h1>
+				<!-- <h1>L'Atelier de <span id="title_j">J</span><span>ames</span></h1> -->
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Logo">
 			</div>
 		</div>
 		<div class="hero_bottom">

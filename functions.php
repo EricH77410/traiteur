@@ -161,5 +161,5 @@ function atelier_checkout_fields($fields){
 
 add_filter( 'woocommerce_checkout_fields', 'atelier_checkout_fields', 20 );
 
-?>
+
 

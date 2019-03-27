@@ -31,7 +31,7 @@
 					} ?>
 				</div>
 			</div>
-		</div> <!-- bottom footer end --> -->
+		</div> <!-- bottom footer end --> 
 	</footer><!-- #colophon -->
 
 	<a href="#" class="scrollup"><i class="fa fa-angle-up"> </i> </a>

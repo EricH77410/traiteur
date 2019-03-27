@@ -59,8 +59,6 @@ p#site-description {
   margin: 0 auto;
 }
 
-.banner-menu .sub-title {}
-
 /* ================== */
 /* Menu de la semaine */
 /* ================== */
@@ -128,15 +126,31 @@ p#site-description {
   text-align: center;
 }
 
+/* Ecran tablet */
+@media screen and (min-width: 1024px){
+  .week{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .day {
+    width: 50%;
+  }
+  .menu-plats{
+    border-right: none;
+  }
+}
 
-/* wide screen */
-@media screen and (min-width: 768px) {
+/* ecran large */
+@media screen and (min-width: 1280px) {
   .menu-container {
     width: 100%;
   }
 
   .week {
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: unset;
   }
 
   .day {
@@ -156,6 +170,7 @@ p#site-description {
     margin-bottom: 10px;
   }
 }
+
 
 /* Sticky Header */
 

@@ -139,7 +139,7 @@ function atelier_render_menu_plat($plat){
     echo wp_get_attachment_url($plat->get_image_id());
     echo '" alt="'.$plat->get_name().'">';  
     echo '<p class="menu-description">' . $plat->get_short_description() . '</p>';
-    echo '<div class="menu-price">'.$plat->get_regular_price().'</div>';
+    echo '<div class="menu-price">'.$plat->get_regular_price().' €</div>';
     echo '<a href="/boutique/?add-to-cart='.$plat->get_id().'" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart menu-button" data-product_id="'.$plat->get_id().'" data-product_sku="" aria-label="Ajouter “'.$plat->get_name().'” à votre panier" rel="nofollow"><i class="fa fa-cart"></i> Ajouter</a>';
     
   echo '</div>';

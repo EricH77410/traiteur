@@ -409,7 +409,8 @@ p {
 .hero_bottom {
   width: 100%;
   background-color: #fff;
-  height: 150px;
+  padding-top: 1rem;
+  height: auto;
 }
 .hero_bottom__contact {
   display: flex;
@@ -442,3 +443,24 @@ p {
   font-family: 'Great vibes', cursive;
 }
 /* End Sticky Header */
+
+/* Footer Rico */
+
+.rico-footer {
+  background-color: #8C7E5B;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rico-footer h4 {
+  color: #fff;
+}
+
+.footer-img {
+  width: 250px;
+  height: 55px !important;
+}
+
+/* -- End Footer */

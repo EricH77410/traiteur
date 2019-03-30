@@ -10,39 +10,13 @@
  */
 ?>
 
-	</div><!--  body-content-wrapper end -->
+<footer class="rico-footer">
+	<img class="footer-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Logo">
+	<h4>17 Avenue de Verdun</h4>
+	<h4>64200 BIARRITZ</h4>
+</footer>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-<!-- 
-		<?php get_template_part( 'template-parts/content-footer' ); ?>
 
-		<div id="bottom-footer">
-			<div class="tg-container">
-
-				<?php do_action( 'foodhunt_footer_copyright' ); ?>
-
-				<div class="footer-menu">
-					<?php if( has_nav_menu( 'footer' ) ) {
-						wp_nav_menu( array(
-							'theme_location' => 'footer',
-							'depth' => -1,
-							'fallback_cb' => false
-						));
-					} ?>
-				</div>
-			</div>
-		</div> <!-- bottom footer end --> 
-	</footer><!-- #colophon -->
-
-	<a href="#" class="scrollup"><i class="fa fa-angle-up"> </i> </a>
-</div><!-- #page -->
-
-<div class="search-box">
-	<div class="search-form-wrapper">
-		<?php get_search_form(); ?>
-		<div class="close"> <?php esc_html_e( 'close me', 'foodhunt' ) ?> </div>
-	</div>
-</div>
 <?php wp_footer(); ?>
 
 </body>
